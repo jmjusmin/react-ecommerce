@@ -16,7 +16,14 @@ function ProductDetails({ product, products }) {
   const [index, setIndex] = useState(0);
 
   //destructue from context
-  const { decQty, incQty, qty, onAdd } = useStateContext();
+  const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
+
+  const handleBuyNow = async () => {
+    onAdd(product, qty);
+
+    setShowCart(true);
+  };
+
   return (
     <div>
       <div className="product-detail-container">
@@ -31,6 +38,7 @@ function ProductDetails({ product, products }) {
             {image?.map((item, i) => (
               <img
                 src={urlFor(item)}
+                key={i}
                 className={
                   i === index ? "small-image selected-image" : "small-image"
                 }
@@ -60,9 +68,7 @@ function ProductDetails({ product, products }) {
               <span className="minus" onClick={decQty}>
                 <AiOutlineMinus />
               </span>
-              <span className="num" onClick="">
-                {qty}
-              </span>
+              <span className="num">{qty}</span>
               <span className="plus" onClick={incQty}>
                 <AiOutlinePlus />
               </span>
@@ -76,7 +82,11 @@ function ProductDetails({ product, products }) {
             >
               Add to cart
             </button>
-            <button type="button" className="buy-now" onClick={``}>
+            <button
+              type="button"
+              className="buy-now"
+              onClick={() => handleBuyNow()}
+            >
               Buy now
             </button>
           </div>
