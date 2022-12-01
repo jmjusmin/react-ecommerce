@@ -16,7 +16,7 @@ function HeroBanner({ heroBanner }) {
         />
 
         <div>
-          <Link href={`/product/${heroBanner.product}`}>
+          <Link href={`/product/${heroBanner.slug.current}`}>
             <button type="button">{heroBanner.buttonText}</button>
           </Link>
           <div className="desc">

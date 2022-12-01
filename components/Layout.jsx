@@ -7,7 +7,7 @@ function Layout({ children }) {
   return (
     <div className="layout">
       <Head>
-        <title>📚 ReadAholic</title>
+        <title>💄 BeautyTools</title>
       </Head>
       <header>
         <Navbar />

@@ -22,6 +22,15 @@ export default {
       type: "string",
     },
     {
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "name", //create a unique slug base on name property
+        maxLength: 90,
+      },
+    },
+    {
       name: "desc",
       title: "Desc",
       type: "string",

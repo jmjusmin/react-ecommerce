@@ -12,10 +12,12 @@ function FooterBanner({
     midText,
     desc,
     product,
+    slug,
     buttonText,
     image,
   },
 }) {
+  console.log(slug);
   return (
     <div className="footer-banner-container">
       <div className="banner-desc">
@@ -29,7 +31,7 @@ function FooterBanner({
           <p>{smallText}</p>
           <h3>{midText}</h3>
           <p>{desc}</p>
-          <Link href={`/product/${product}`}>
+          <Link href={`/product/${slug.current}`}>
             <button type="button">{buttonText}</button>
           </Link>
         </div>
