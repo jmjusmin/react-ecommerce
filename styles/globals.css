@@ -49,7 +49,6 @@ a {
   font-size: 29px;
   font-weight: 600;
   margin: 60px 0px;
-  color: #f02d34;
 }
 .marquee {
   position: relative;
@@ -121,43 +120,60 @@ span.text-red {
   cursor: pointer;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
-  color: #324d67;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-white-2);
+  max-width: 250px;
 }
 .product-card:hover {
   transform: scale(1.1, 1.1);
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
 }
 .product-image {
-  border-radius: 15px;
   background-color: var(--color-white-2);
   transform: scale(1, 1);
   transition: transform 0.5s ease;
 }
-
 .product-name {
   font-weight: 500;
+}
+.product-priceDiv {
+  display: flex;
+  justify-content: space-between;
 }
 .product-price {
   font-weight: 800;
   margin-top: 6px;
-  color: black;
+  color: var(--color-gray);
+}
+.product-priceIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.product-priceIcon:hover {
+  color: red;
 }
 
 .hero-banner-container {
-  background-image: url("../books-cover.jpg");
-  background-size: cover;
+  padding: 100px 40px;
+  background-color: #dcdcdc;
   position: relative;
-  height: 70vh;
+  height: 500px;
   line-height: 0.9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+}
+.hero-banner-container .beats-solo {
+  font-size: 20px;
 }
 
-.hero-banner-textwrap {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 70%;
-  padding: 20px;
+.hero-banner-image {
+  position: absolute;
+  top: 0%;
+  right: 20%;
+  width: 450px;
+  height: 450px;
 }
 
 .hero-banner-container button {
@@ -184,13 +200,13 @@ span.text-red {
 
 @keyframes summerSale {
   0% {
-    transform: scale(1.1);
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.3);
+    transform: scale(1.2);
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(1);
   }
 }
 
@@ -199,13 +215,6 @@ span.text-red {
   font-size: 10em;
   margin-left: -20px;
   text-transform: uppercase;
-}
-.hero-banner-image {
-  position: absolute;
-  top: 0%;
-  right: 20%;
-  width: 450px;
-  height: 450px;
 }
 
 .desc {

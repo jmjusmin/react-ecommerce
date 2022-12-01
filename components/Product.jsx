@@ -1,8 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { urlFor } from "../lib/client";
+import { BsFillCartPlusFill } from "react-icons/bs";
+import { useStateContext } from "../context/StateContext";
 
-function Product({ product: { image, name, slug, price } }) {
+function Product({ product: { image, name, slug, price }, product }) {
+  //destructue from context
+  const { onAdd } = useStateContext();
+
   return (
     <div>
       <Link href={`/product/${slug.current}`}>
@@ -15,7 +20,13 @@ function Product({ product: { image, name, slug, price } }) {
             alt={`${name}-img`}
           />
           <p className="product-name">{name}</p>
-          <p className="product-price">${price}</p>
+          <div className="product-priceDiv">
+            <p className="product-price">${price}</p>
+            <BsFillCartPlusFill
+              className="product-priceIcon"
+              onClick={() => onAdd(product, 1)}
+            />
+          </div>
         </div>
       </Link>
     </div>
