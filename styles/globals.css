@@ -162,7 +162,7 @@ span.text-red {
 
 .hero-banner-container {
   padding: 100px;
-  background-image: url("./banner-bg.jpg");
+  background-image: url("../public/banner-bg.jpg");
   position: relative;
   height: 500px;
   line-height: 0.9;
