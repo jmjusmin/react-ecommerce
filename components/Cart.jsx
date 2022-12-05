@@ -51,7 +51,7 @@ function Cart() {
           className="cart-heading"
           onClick={() => setShowCart(false)}
         >
-          <AiOutlineLeft />
+          <AiOutlineLeft fill="#fff" />
           <span className="heading">Your Cart</span>
           <span className="cart-num-items">({totalQuantities} items)</span>
         </button>

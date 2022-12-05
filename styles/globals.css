@@ -332,7 +332,7 @@ span.text-red {
 .cart-container {
   height: 100vh;
   width: 600px;
-  background-color: var(--color-white-1);
+  background: var(--color-gradient);
   float: right;
   padding: 40px 10px;
   position: relative;
@@ -369,7 +369,9 @@ span.text-red {
 
 .cart-heading .heading {
   margin-left: 10px;
+  color: var(--color-white-1);
 }
+
 .cart-num-items {
   margin-left: 10px;
   color: #f02d34;
@@ -377,6 +379,7 @@ span.text-red {
 .empty-cart {
   margin: 40px;
   text-align: center;
+  color: var(--color-white-1);
 }
 .empty-cart h3 {
   font-weight: 600;
@@ -437,6 +440,7 @@ span.text-red {
   right: 5px;
   width: 100%;
   padding: 30px 65px;
+  color: var(--color-white-1);
 }
 
 .btn-container {
