@@ -1,10 +1,19 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { urlFor } from "../lib/client";
+import bgBanner from "../public/banner-bg.jpg";
 
 function HeroBanner({ heroBanner }) {
   return (
-    <div className="hero-banner-container">
+    <div
+      className="hero-banner-container"
+      style={{
+        backgroundImage: `url(${bgBanner.src})`,
+        width: "100%",
+        height: "100%",
+      }}
+    >
       <div>
         <p className="beats-solo">{heroBanner.smallText}</p>
         <h3>{heroBanner.midText}</h3>
