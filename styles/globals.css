@@ -12,6 +12,7 @@
   --color-white-1: #fff;
   --color-white-2: #ebebeb;
   --color-black: #000;
+  --color-red: #f02d34;
 }
 html,
 body,
@@ -78,7 +79,7 @@ a {
 }
 
 span.text-red {
-  -webkit-text-stroke: 1px #f02d34;
+  -webkit-text-stroke: 1px var(--color-red);
   margin-left: 6px;
 }
 .logo a {
@@ -105,7 +106,7 @@ span.text-red {
   right: -8px;
   font-size: 12px;
   color: var(--color-white-2);
-  background-color: #f02d34;
+  background-color: var(--color-red);
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -157,7 +158,7 @@ span.text-red {
 }
 
 .product-priceIcon:hover {
-  color: red;
+  color: var(--color-red);
 }
 
 .hero-banner-container {
@@ -194,7 +195,7 @@ span.text-red {
 }
 
 .hero-banner-container h3 {
-  color: #f02d34;
+  color: var(--color-red);
   font-size: 4rem;
   margin-top: 4px;
   animation-name: summerSale;
@@ -272,7 +273,7 @@ span.text-red {
 .banner-desc button {
   padding: 10px 16px;
   background-color: var(--color-white-1);
-  color: red;
+  color: var(--color-red);
   border: none;
   margin-top: 40px;
   font-size: 18px;
@@ -374,7 +375,7 @@ span.text-red {
 
 .cart-num-items {
   margin-left: 10px;
-  color: #f02d34;
+  color: var(--color-red);
 }
 .empty-cart {
   margin: 40px;
@@ -429,7 +430,7 @@ span.text-red {
 }
 .remove-item {
   font-size: 24px;
-  color: #f02d34;
+  color: var(--color-red);
   cursor: pointer;
   background: transparent;
   border: none;
@@ -456,7 +457,7 @@ span.text-red {
   margin-top: 10px;
   margin-top: 40px;
   text-transform: uppercase;
-  background-color: #f02d34;
+  background-color: var(--color-red);
   color: var(--color-white-1);
   cursor: pointer;
   transform: scale(1, 1);
@@ -483,7 +484,7 @@ span.text-red {
   transition: 0.3s ease-in-out;
 }
 .product-detail-image:hover {
-  background-color: #f02d34;
+  background-color: var(--color-red);
 }
 .small-images-container {
   display: flex;
@@ -499,10 +500,10 @@ span.text-red {
 }
 
 .selected-image {
-  background-color: #f02d34;
+  background-color: var(--color-red);
 }
 .reviews {
-  color: #f02d34;
+  color: var(--color-red);
   margin-top: 10px;
   display: flex;
   gap: 5px;
@@ -523,7 +524,7 @@ span.text-red {
   font-weight: 700;
   font-size: 26px;
   margin-top: 30px;
-  color: #f02d34;
+  color: var(--color-reds);
 }
 .price .old-price,
 .product-price .old-price,
@@ -543,12 +544,12 @@ span.text-red {
 }
 .buttons .add-to-cart {
   padding: 10px 20px;
-  border: 1px solid #f02d34;
+  border: 1px solid var(--color-red);
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
   background-color: var(--color-white-1);
-  color: #f02d34;
+  color: var(--color-red);
   cursor: pointer;
   width: 200px;
   transform: scale(1, 1);
@@ -561,7 +562,7 @@ span.text-red {
   width: 200px;
 
   padding: 10px 20px;
-  background-color: #f02d34;
+  background-color: var(--color-red);
   color: var(--color-white-1);
   border: none;
   margin-top: 40px;
@@ -587,7 +588,7 @@ span.text-red {
 }
 .quantity-desc .minus {
   border-right: 1px solid var(--color-black);
-  color: #f02d34;
+  color: var(--color-red);
 }
 .quantity-desc .num {
   border-right: 1px solid var(--color-black);
@@ -616,7 +617,7 @@ span.text-red {
 }
 .max-qty {
   font-weight: 500;
-  color: #f02d34;
+  color: var(--color-red);
 }
 .success-wrapper,
 .cancel-wrapper {
@@ -666,7 +667,7 @@ span.text-red {
 }
 .success .description .email {
   margin-left: 5px;
-  color: #f02d34;
+  color: var(--color-red);
 }
 .product-max-qty {
   margin-top: 10px;
